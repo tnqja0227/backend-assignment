@@ -43,8 +43,12 @@ It provides the [Winston logger](https://github.com/winstonjs/winston) util by d
 You don't have to use `console.log`. Instead, import logger util and use `logger`
 
 ```ts
-logger.
+logger.info('info')
+logger.warn('warn')
+logger.error('error')
 ```
+
+<img width="273" alt="Screen Shot 2023-02-08 at 3 21 40 PM" src="https://user-images.githubusercontent.com/60650372/217451135-637bd482-2e99-44d2-8fa4-9b0db03268e7.png">
 
 ## License
 
