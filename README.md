@@ -4,10 +4,13 @@ A node-express-mongoose-with-typescript boilerplate for beginners.
 
 ## Usage
 
+You should write your own mongodb URL on .env.
+
 ```sh
 git clone https://github.com/Byunk/node-express-mongoose-with-typescript.git
 cd node-express-mongoose-with-typescript
 npm install
+cp .env.example .env
 npm dev
 ```
 
@@ -31,6 +34,16 @@ src
 │   └── util
 │       └── logger.ts
 └── index.ts
+```
+
+### Logger
+
+It provides the [Winston logger](https://github.com/winstonjs/winston) util by default.
+
+You don't have to use `console.log`. Instead, import logger util and use `logger`
+
+```ts
+logger.
 ```
 
 ## License
