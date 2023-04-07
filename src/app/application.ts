@@ -21,19 +21,7 @@ export class Application {
   }
 
   private async connectToDatabase() {
-    const db = mongoose.connection;
-    db.on('error', console.error);
-    db.once('open', function () {
-      logger.info('Connected to mongod server');
-    });
 
-    mongoose.set('strictQuery', true);
-    mongoose.connect(process.env.DB_URL || `localhost:27017/test`);
-  }
-
-  private logRequest(req: Request, res: Response, next: NextFunction) {
-    logger.info(`Request URL: ${req.originalUrl} Method: ${req.method}`);
-    next();
   }
 
   public startServer(): void {
